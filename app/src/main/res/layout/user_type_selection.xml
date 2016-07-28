@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dse_guide.dseguide.user_type_selection"
+    android:background="@color/bgcolor"
+    >
+
+    <ImageView
+        android:onClick="Dse_candidate_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/staff"
+        android:src="@drawable/staff"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:background="@color/highlighted_text_material_light"
+        android:layout_above="@+id/textView2"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:src="@drawable/teacher"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:background="@color/highlighted_text_material_light"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/staff"
+        android:layout_toStartOf="@+id/staff"
+        android:onClick="Dse_guide_selected"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select your Account Type"
+        android:id="@+id/textView"
+        android:layout_marginBottom="71dp"
+        android:layout_above="@+id/staff"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Guide"
+        android:id="@+id/textView2"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6" />
+
+    <TextView
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Candidate"
+        android:id="@+id/textView3"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/staff"
+        android:layout_alignStart="@+id/staff" />
+
+</RelativeLayout>
